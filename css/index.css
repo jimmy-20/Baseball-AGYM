@@ -14,30 +14,76 @@
 h1{
     font-size: 32px;
     font-family: var(--fuentePrincipal);
+    font-weight: bold;
 }
 
 h2{
     font-size: 28px;
     font-family: var(--fuentePrincipal);
+    font-weight: bold;
 }
 
 h3{
     font-size: 24px;
     font-family: var(--fuentePrincipal);
+    font-weight: bold;
 }
 
 h4{
     font-size: 20px;
     font-family: var(--fuentePrincipal);
+    font-weight: bold;
+}
+
+.italic{
+    font-style: italic;
 }
 
 p{
     font-family: var(--fuentePrincipal);
     font-size: 16px;
+    line-height: 1.5;
 }
 
 a{
     text-decoration: none;
+    font-family: var(--fuentePrincipal);
+}
+
+.icon{
+    fill: white;
+}
+
+.barra {
+    display: grid;
+    grid-template-columns: 1fr 0.3fr;
+    grid-template-rows: auto;
+    background-color: var(--azul);
+}
+
+.navegacion{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--azul);
+    align-items: center;
+    
+}
+
+.nav-bar a{
+    margin: 20px;
+    font-weight: bold;
+}
+
+.mi-cuenta{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    margin-right: 10px;
+}
+
+.login a > p{
+    padding-right: 20px;
 }
 
 .boton{
@@ -51,13 +97,6 @@ a{
 
 .btn-navegar{
     background: var(--azul);
-}
-
-.contenido-header, .navegacion{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    color: var(--blanco);
 }
 
 .nav-bar a{
