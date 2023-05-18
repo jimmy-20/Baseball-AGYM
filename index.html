@@ -72,12 +72,12 @@
           </div>
 
           <div class="card-partido">
-            <div class="card-equipos">
-              <img src="./Images/Baltimore Orioles 2.png" alt="" />
+            <div class="container-versus">
+              <img src="./Images/Equipos/Baltimore Orioles.png" width="100px" height="100px" alt="" />
               <p>VS</p>
-              <img src="./Images/Boston Red Sox 2.png" alt="" />
+              <img src="./Images/Equipos/Boston Red Sox.png" width="100px" height="100px" alt="" />
             </div>
-            <div class="card-partido-carreras">
+            <div class="container-puntaje">
               <span>0</span>
               <span>-</span>
               <span>0</span>
@@ -85,12 +85,12 @@
           </div>
 
           <div class="card-partido">
-            <div class="card-equipos">
-              <img src="./Images/Chicago White Sox 2.png" alt="" />
+            <div class="container-versus">
+              <img src="./Images/Equipos/Chicago White Sox.png" width="100px" height="100px" alt="" />
               <p>VS</p>
-              <img src="./Images/Chicago White Sox 2.png" alt="" />
+              <img src="./Images/Equipos/Chicago White Sox.png" width="100px" height="100px"  alt="" />
             </div>
-            <div class="card-partido-carreras">
+            <div class="container-puntaje">
               <span>0</span>
               <span>-</span>
               <span>0</span>
@@ -98,16 +98,16 @@
           </div>
 
           <div class="card-fecha">
-            <p>16 de Abril</p>
+            <p>12 de Abril</p>
           </div>
 
           <div class="card-partido">
-            <div class="card-equipos">
-              <img src="./Images/Houston Astros 2.png" alt="" />
+            <div class="container-versus">
+              <img src="./Images/Equipos/Houston Astros.png" width="100px" height="100px"  alt="" />
               <p>VS</p>
-              <img src="./Images/Los Angeles 2.png" alt="" />
+              <img src="./Images/Equipos/Los Angeles.png" width="100px" height="100px"  alt="" />
             </div>
-            <div class="card-partido-carreras">
+            <div class="container-puntaje">
               <span>0</span>
               <span>-</span>
               <span>0</span>
@@ -115,7 +115,11 @@
           </div>
         </div>
 
-        <div class="mas">
+        <div class="carrusel-partidos">
+          <div class="container-mover">
+            <img class="flecha flecha-partidos" src="./Icons/Left.svg" width="64px" height="64px" alt="">
+            <img class="flecha flecha-partidos" src="./Icons/Right.svg" width="64px" height="64px" alt="">
+          </div>
           <input class="boton btn-navegar" type="button" value="Calendario" />
         </div>
       </section>
@@ -125,42 +129,50 @@
           <div class="noticia-act--tag">
             <img src="./Images/Tag.png" alt="" />
           </div>
-          <h2>
+          <h2 class="titular-imagen">
             Carlotes Fuentes retira a Carlos Correa con una buena atrapadada
           </h2>
         </section>
 
         <section class="noticias-titulares">
-          <h2>Últimas noticicas</h2>
+          <h2>Titulares</h2>
           <div class="titulares">
-            <ul>
-              <li>
-                Carlotes Fuentes retira a Dennis Corea con una buena atrapada
-              </li>
-              <li>
-                Todo lo que debes saber sobre el regreso de Fernando Tatis Jr.
-              </li>
-              <li>
-                Atleticos adquieren terreno en las Vengas para su nuevo estadio
-              </li>
-              <li>
-                Los Yankees batallan con las incosistencias en su alineacion
-              </li>
-              <li>
-                Max Scherzer es expulsado tras ser revisado por los umpires
-              </li>
-            </ul>
+            <div>
+              <div class="circulo"></div>
+              <h3>Carlotes Fuentes retira a Carlos Correa con una buena atrapadada</h3>
+            </div>
+
+            <div>
+              <div class="circulo"></div>
+              <h3>Carlotes Fuentes retira a Carlos Correa con una buena atrapadada</h3>
+            </div>
+
+            <div>
+              <div class="circulo"></div>
+              <h3>Carlotes Fuentes retira a Carlos Correa con una buena atrapadada</h3>
+            </div>
+
+            <div>
+              <div class="circulo"></div>
+              <h3>Carlotes Fuentes retira a Carlos Correa con una buena atrapadada</h3>
+            </div>
+
+            <div>
+              <div class="circulo"></div>
+              <h3>Carlotes Fuentes retira a Carlos Correa con una buena atrapadada</h3>
+            </div>
+            
           </div>
         </section>
       </section>
 
-      <section class="sect-mas-popular">
-        <h2>Lo más hablado del momento 🔥</h2>
-        <div class="contenedor">
-          <div class="Images-mas-popular">
-            <img src="./Images/Jugador Foto.jpg" alt="" />
+      <h2 class="titulo-popular">Lo más hablado del momento 🔥</h2>
+
+      <section class="sec-popular">
+          <div class="jugador-popular">
+            <img class="flecha flecha-jugador-izquierda" id="" src="./Icons/Left.svg" alt="">
           </div>
-          <div class="texto-mas-popular">
+          <div class="info-jugador">
             <h2>Raul Cajallena</h2>
             <h3>Bateador</h3>
             <p>
@@ -173,8 +185,9 @@
               popularised in the 1960s with the release of Letraset sheets
               containing
             </p>
+            <img class="flecha flecha-jugador" src="./Icons/Right.svg" width="64px" height="64px" alt="">
+            <img class="equipo-logo" src="./Images/Equipos/Los Angeles.png" width="64px" height="80px" alt="">
           </div>
-        </div>
       </section>
     </main>
 
