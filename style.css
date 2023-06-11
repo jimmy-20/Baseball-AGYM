@@ -325,9 +325,155 @@ nav label {
   gap: 20px;
 }
 
+.flecha-partidos{
+  border: solid var(--negro);
+  margin: 0 0px;
+  color: var(--negro);
+}
+
 /* Fin de la seccion x */
 
 /* Inicio de la seccion noticias */
+
 .sect-noticias{
-  margin: 20px 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: 10px 0;
 }
+
+@media (min-width:768px){
+   .sect-noticias{
+    grid-template-columns: 1fr 0.5fr;
+    grid-template-rows: 1fr;
+   }
+
+}
+
+.noticia-act{
+  background-image: url("../Images/Titular\ 1\ Foto.png");
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px 10px;
+}
+
+.noticia-act h2{
+  max-width: 624px;
+}
+
+.titular-imagen{
+  color: var(--blanco);
+}
+
+.noticias-titulares{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid var(--negro);
+  border-radius: 20px;
+  background-color: var(--blanco);
+  box-shadow: 5px 5px 10px 3px rgba(0,0,0,0.75);
+  margin: 10px;
+  padding: 10px;
+}
+
+
+
+.noticias-titulares > h2{
+  color: red;
+  margin-top: 20px;
+}
+
+.circulo{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--azul);
+}
+
+.titulares{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.titulares > div{
+  display: grid;
+  grid-template-columns: .1fr 1fr;
+  gap: 20px;
+  align-items: center;
+  justify-items: center;
+}
+
+/* Fin seccion noticias */
+
+/* Inicio seccion destacado */
+
+.titulo-popular{
+  text-align: center;
+  margin: 50px;
+}
+
+.sec-popular{
+  display: grid;
+  grid-template-rows: repeat(2, 292px);
+}
+
+@media (min-width:768px){
+  .sec-popular{
+    grid-template-columns: repeat(2, 1fr);
+  } 
+
+}
+
+.jugador-popular{
+  background-image: url(../Images/Jugador\ Foto\ 1.png);
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+
+}
+
+.info-jugador{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--blanco);
+  padding: 25px;
+  gap: 5px;
+  position: relative;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 40.0%, #B0AEAE 95.31%);
+  background-color: var(--blanco);
+}
+
+/* .info-jugador > p{
+  margin: 30px 50px 0 0;
+}
+ */
+
+.flecha-jugador-izquierda{
+  background-color: var(--azul);
+  position: absolute;
+  left: 10px;
+  top: 50%;
+}
+
+.flecha-jugador-derecha{
+  background-color: var(--azul);
+  position: absolute;
+  right: 10px;
+  top: 50%;
+}
+
+.equipo-logo{
+  position: absolute;
+  bottom: 5%;
+  right: 15px;
+}
+
+
+
