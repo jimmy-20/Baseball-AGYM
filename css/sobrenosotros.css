@@ -140,6 +140,7 @@
     background-color: var(--negro-gris);
     box-shadow: 11px 16px 20px rgba(0, 0, 0, 0.5);
     color: var(--blanco);
+    width: 330px;
   }
 
   .container-contactanos{
@@ -150,8 +151,9 @@
     justify-content: center;
   }
 
-  .mapa{
-    height: 500px;
+  .map,.map iframe{
+    width: 100%;
+    height: 400px;
   }
   /*Fin de seccion contacto*/
 
