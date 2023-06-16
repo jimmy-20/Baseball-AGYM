@@ -115,6 +115,10 @@
   /*Fin secciones nosotros*/
 
   /*Seccion de contacto*/
+
+  .sec__contactanos {
+    margin-bottom: 30px;
+  }
   .sec__contactanos h2{
     text-align: center;
     margin-bottom: 20px;
@@ -136,6 +140,18 @@
     background-color: var(--negro-gris);
     box-shadow: 11px 16px 20px rgba(0, 0, 0, 0.5);
     color: var(--blanco);
+  }
+
+  .container-contactanos{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mapa{
+    height: 500px;
   }
   /*Fin de seccion contacto*/
 
@@ -173,4 +189,18 @@
     height: 100%;
   }
 
+  .container-contactanos{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .sec__contactanos-cards{
+    width: 300px;
+  }
+
+  .mapa{
+    height: 400px;
+    width: 100%;
+  }
 }
