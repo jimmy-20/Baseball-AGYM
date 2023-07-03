@@ -2,19 +2,127 @@
 <html lang="en">
 
 <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Tiro en llamas</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Share:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-            rel="stylesheet" />
-        <link rel="stylesheet" href="./css/tienda.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tiro en llamas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Share:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./css/tienda.css" />
+    <!-- Font awasome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <div id="contenedor-precarga">
+        <div class="preloader" id="precarga"></div>
+        <h1 class="titulo-carga">Cargando...</h1>
+    </div>
+
+    <!-- Login -->
+    <div class="popup">
+        <div class="wrapper">
+            <span class="icon-close"><i class="fa-solid fa-xmark"></i></span>
+            <div class="form-box login2">
+
+                <i class="fa-solid fa-circle-user"></i>
+                <h3>Inicio Sesión</h3>
+
+                <form action="#" id="loginForm" class="login-form">
+                    <div class="input-box">
+                        <input class="user-name" type="text" placeholder="Ingrese su usuario" required>
+                        <label>Usuario</label>
+                    </div>
+
+                    <div class="input-box">
+                        <input class="passwordLogin" type="password" placeholder="******" required>
+                        <label>Contraseña</label>
+                    </div>
+
+                    <button type="submit" class="btn">Entrar</button>
+
+                    <div class="inicio-google">
+                        <p>O</p>
+                        <P>Inicia con</P>
+                        <a href="#"> <i class="fa-brands fa-google"></i> Google</a>
+                    </div>
+                    <div class="login-register">
+                        <p class="login-register-p"> ¿Aún no tienes una cuenta ? <a href="#form-box register"
+                                class="register-link">Registrate!</a></p>
+                    </div>
+                </form>
+            </div>
+
+            <div class="form-box register">
+                <h3>Registro</h3>
+
+                <div class="profile-image">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <img id="profileImage" src="#" alt="Foto de perfil" style="width: 150px; 
+                height: 150px; 
+                border-radius: 50%;
+                display: none;">
+                    <button id="profileImageButton" class="profile-image-button" onclick="openCameraModal()"><i
+                            class="fa-sharp fa-solid fa-camera-retro"></i></button>
+                </div>
+
+
+                <form action="#" id="registerForm" class="resgister-form">
+
+
+                    <div class="input-box">
+                        <input type="email" class="email" required>
+                        <label>Ingrese su correo electrónico:</label>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="text" class="userName" required>
+                        <label> Ingrese su nombre de usuario</label>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="password" class="password" id="password" required>
+                        <label>Ingrese una contraseña:</label>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="password" class="confirmPassword" id="confirmPassword" required>
+                        <label>Ingrese de nuevo la contraseña:</label>
+                    </div>
+
+                    <div id="message" class="message"></div>
+
+                    <div class="remember-forgot" required>
+                        <label>
+                            Al crear una cuenta en nuestro sitio,
+                            estás aceptando nuestros términos de uso y políticas de privacidad.
+                        </label>
+                    </div>
+                    <button type="submit" class="btn">Crear una cuenta nueva</button>
+
+                    <div class="login-register">
+                        <p>¿Ya tienes una cuenta? <a href="#form-box login" class="login-link">Inicie sesión aquí</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div id="cameraModal" class="modal">
+            <div class="modal-content">
+                <video id="cameraVideo" width="400" height="300" autoplay></video>
+                <button class="btn-submit" onclick="capturePhoto()">Capturar foto</button>
+            </div>
+        </div>
+    </div>
+    <!-- Termina login -->
     <nav>
+
         <div class="barra">
             <div class="navegacion">
                 <div class="logo">
@@ -38,10 +146,10 @@
                 </div>
 
                 <div class="login">
-                    <a href="login.hmtl">
+                    <a href="#" class="login" id="login">
                         <p class="bold">Iniciar Sesión</p>
                         <img src="./Images/User.png" width="48px" height="48px" alt="login" />
-                    </a>
+                      </a>
                 </div>
             </div>
         </div>
@@ -169,7 +277,7 @@
                     <a href="">
                         <img src="./Images/Productos/Camiseta personalizada para hombres de Seattles Mariners.png"
                             alt="" />
-                   </a>
+                    </a>
                     <div class="info-producto">
                         <h3>Camiseta personalizada para hombres de Seattles Mariners</h3>
                         <h4>Camiseta</h4>
@@ -184,7 +292,7 @@
                     <a href="">
                         <img src="./Images/Productos/Camiseta personalizada para hombres de Detroit Tigers.png"
                             alt="" />
-                   </a>
+                    </a>
                     <div class="info-producto">
                         <h3>Camiseta personalizada para hombres de Detroit Tiggers</h3>
                         <h4>Camiseta</h4>
@@ -199,7 +307,7 @@
                     <a href="">
                         <img src="./Images/Productos/Camiseta personalizada para  mujeres con cuello V de Detroit Tigers.png"
                             alt="" />
-                   </a>
+                    </a>
                     <div class="info-producto">
                         <h3>Camiseta fanático para mujeres con cuello V de Detroit Tigers</h3>
                         <h4>Camiseta</h4>
@@ -214,7 +322,7 @@
                     <a href="">
                         <img src="./Images/Productos/Correa de silicona Apple Watch con logo azul marino Detroit Tigers.png"
                             alt="" />
-                   </a>
+                    </a>
                     <div class="info-producto">
                         <h3>Correa de silicona Apple Watch con logo azul marino Detroit Tigers</h3>
                         <h4>Camiseta</h4>
@@ -229,7 +337,7 @@
                     <a href="">
                         <img src="./Images/Productos/Cartera de mujer de Detroit Tigers con triple cremallera.png"
                             alt="" />
-                   </a>
+                    </a>
                     <div class="info-producto">
                         <h3>Cartera de mujer de Detroit Tigers con triple cremallera</h3>
                         <h4>Camiseta</h4>
@@ -244,7 +352,7 @@
                     <a href="">
                         <img src="./Images/Productos/Chaqueta de forro polar reversible Diseño Real de los Angeles Dodgers para hombres.png"
                             alt="" />
-                   </a>
+                    </a>
                     <div class="info-producto">
                         <h3>Chaqueta de forro polar reversible Diseño Real de los Angeles Dodgers para hombres</h3>
                         <h4>Camiseta</h4>
@@ -257,9 +365,8 @@
 
                 <div class="producto">
                     <a href="producto.html">
-                        <img src="./Images/Productos/Caja de regalo para fanatico de Los Angeles.png"
-                            alt="" />
-                   </a>
+                        <img src="./Images/Productos/Caja de regalo para fanatico de Los Angeles.png" alt="" />
+                    </a>
                     <div class="info-producto">
                         <h3>Caja de regalo para fanatico de Los Angeles</h3>
                         <h4>Camiseta</h4>
@@ -337,6 +444,9 @@
             <h4>Todos los derechos reservados 2023</h4>
             <img src="./Icons/Copyright.svg" alt="" />
         </div>
+
+        <script src="javascript/precarga.js"></script>
+        <script src="javascript/index.js"></script>
     </footer>
 </body>
 
