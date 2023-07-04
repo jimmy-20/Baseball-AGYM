@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/equipos.css">
   <link href="https://fonts.googleapis.com/css2?family=Share:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     rel="stylesheet" />
   <title>Tiro en llamas</title>
@@ -13,7 +12,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/static.css">
+  <link rel="stylesheet" href="./css/componentes.css">
+  <link rel="stylesheet" href="./css/equipos.css">
 </head>
 
 <body>
@@ -117,37 +119,33 @@
     </div>
   </div>
   <!-- Termina login -->
-  <nav>
-    <div class="barra">
-      <div class="navegacion">
-        <div class="logo">
-          <a href="index.html">
-            <img src="./Images/On-fire-Logo.png" width="85px" height="64px" alt="logo" />
-          </a>
-        </div>
-
-        <div class="nav-bar">
-          <a href="noticias.html">Noticias</a>
-          <a href="comunicados.html">Comunicados</a>
-          <a href="calendario.html">Calendario</a>
-          <a href="equipos.html">Equipos</a>
-          <a href="tienda.html">Tienda</a>
-        </div>
-      </div>
-
-      <div class="mi-cuenta">
-        <div>
-          <img src="./Icons/Carrito.svg" width="48px" height="48px" class="icon" />
-        </div>
-
-        <div class="login">
-          <a href="#" class="login" id="login">
-            <p class="bold">Iniciar Sesión</p>
-            <img src="./Images/User.png" width="48px" height="48px" alt="login" />
-          </a>
-        </div>
-      </div>
+  <nav class="nav">
+    <div class="nav__logo">
+      <a href="index.html">
+        <img src="./Images/On-fire-Logo.png" width="85px" height="64px" alt="logo" />
+      </a>
     </div>
+
+    <input type="checkbox" name="" id="toggle">
+    <label for="toggle"><i class="material-icons">menu</i></label>
+    <div class="menu">
+      <ul>
+        <li> <a href="noticias.html">Noticias</a></li>
+        <li> <a href="comunicados.html">Comunicados</a></li>
+        <li> <a href="calendario.html">Calendario</a></li>
+        <li> <a href="equipos.html">Equipos</a></li>
+        <li> <a href="tienda.html">Tienda</a> </li>
+      </ul>
+    </div>
+    <div class="algo">
+      <a href="carrito.html" class="carrito"><img src="./Icons/Carrito.svg" width="48px" height="48px"
+          class="icon" /></a>
+      <a href="#" class="login" id="login">
+        <p class="bold">Iniciar Sesión</p>
+        <img src="./Images/User.png" width="48px" height="48px" alt="login" />
+      </a>
+    </div>
+
   </nav>
 
   <header class="titulo-pagina">
@@ -280,18 +278,20 @@
     <div class="fo-nosotros">
       <div>
         <ul>
-          <li>
-            <h3>Sobre nosotros</h3>
-          </li>
-          <li>
-            <h4>¿Quienes somos?</h4>
-          </li>
-          <li>
-            <h4>Misión</h4>
-          </li>
-          <li>
-            <h4>Visión</h4>
-          </li>
+          <a href="sobrenosotros.html">
+            <li>
+              <h3>Sobre nosotros</h3>
+            </li>
+            <li>
+              <h4>¿Quienes somos?</h4>
+            </li>
+            <li>
+              <h4>Misión</h4>
+            </li>
+            <li>
+              <h4>Visión</h4>
+            </li>
+          </a>
         </ul>
       </div>
 
@@ -328,10 +328,10 @@
       <h4>Todos los derechos reservados 2023</h4>
       <img src="./Icons/Copyright.svg" alt="">
     </div>
-    <script src="javascript/precarga.js"></script>
-    <script src="javascript/index.js"></script>
-
   </footer>
+
+  <script src="./javascript/precarga.js"></script>
+  <script src="./javascript/index.js"></script>
 </body>
 
 </html>
