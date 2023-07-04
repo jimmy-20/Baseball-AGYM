@@ -125,93 +125,98 @@
     <!-- Termina login -->
     <nav class="nav">
         <div class="nav__logo">
-          <a href="index.html">
-            <img src="./Images/On-fire-Logo.png" width="85px" height="64px" alt="logo" />
-          </a>
+            <a href="index.html">
+                <img src="./Images/On-fire-Logo.png" width="85px" height="64px" alt="logo" />
+            </a>
         </div>
-  
+
         <input type="checkbox" name="" id="toggle">
-        <label for="toggle"><i class="material-icons">menu</i></label>
+        <label for="toggle" class="toggle"><i class="fa-solid fa-bars"></i></label>
         <div class="menu">
-          <ul>
-            <li> <a href="noticias.html">Noticias</a></li>
-            <li> <a href="comunicados.html">Comunicados</a></li>
-            <li> <a href="calendario.html">Calendario</a></li>
-            <li> <a href="equipos.html">Equipos</a></li>
-            <li> <a href="tienda.html">Tienda</a> </li>
-          </ul>
+            <ul>
+                <li> <a href="noticias.html">Noticias</a></li>
+                <li> <a href="comunicados.html">Comunicados</a></li>
+                <li> <a href="calendario.html">Calendario</a></li>
+                <li> <a href="equipos.html">Equipos</a></li>
+                <li> <a href="tienda.html">Tienda</a> </li>
+            </ul>
         </div>
         <div class="algo">
-          <a href="carrito.html" class="carrito"><img src="./Icons/Carrito.svg" width="48px" height="48px"
-              class="icon" /></a>
-          <a href="#" class="login" id="login">
-            <p class="bold">Iniciar Sesión</p>
-            <img src="./Images/User.png" width="48px" height="48px" alt="login" />
-          </a>
+            <a href="carrito.html" class="carrito"><img src="./Icons/Carrito.svg" width="48px" height="48px"
+                    class="icon" /></a>
+            <a href="#" class="login" id="login">
+                <p class="bold">Iniciar Sesión</p>
+                <img src="./Images/User.png" width="48px" height="48px" alt="login" />
+            </a>
         </div>
-  
-      </nav>
+
+    </nav>
 
     <main>
-        <section class="busqueda">
-            <div class="dato-entrada">
-                <h3>Buscar por nombre:</h3>
-                <input type="text" name="" id="" placeholder="Buscar por nombre del equipo" />
-            </div>
-
-            <div class="dato-entrada">
-                <h3>Buscar por categoria:</h3>
-                <select name="" id="">
-                    <option selected value="">Todas las categorias</option>
-                    <option value="">Gorras</option>
-                    <option value="">Camisas</option>
-                    <option value="">Accesorios</option>
-                    <option value="">Cajas de regalos</option>
-                </select>
-            </div>
-
-            <div class="dato-entrada">
-                <h3>Buscar por equipo:</h3>
-                <select name="" id="">
-                    <option selected value="">Todos los equipos</option>
-                    <option value="">Los Angeles</option>
-                    <option value="">Detroit Tigers</option>
-                    <option value="">Houston Astros</option>
-                    <option value="">Philadelphia</option>
-                </select>
-            </div>
-
-            <div class="busq-para">
-                <h3>Para:</h3>
-                <div class="checkbox">
-                    <input type="checkbox" name="" id="" value="" />
-                    <label for="">Todos</label>
+        <section class="contenedor-busqueda">
+            <div class="busqueda">
+                <div class="dato-entrada">
+                    <h3>Buscar por nombre:</h3>
+                    <input type="text" name="" id="" placeholder="Buscar por nombre del equipo" />
                 </div>
 
-                <div class="checkbox">
-                    <input type="checkbox" name="" id="" value="" />
-                    <label for="">Hombres</label>
+                <div class="dato-entrada">
+                    <h3>Buscar por categoria:</h3>
+                    <select name="" id="">
+                        <option selected value="">Todas las categorias</option>
+                        <option value="">Gorras</option>
+                        <option value="">Camisas</option>
+                        <option value="">Accesorios</option>
+                        <option value="">Cajas de regalos</option>
+                    </select>
                 </div>
 
-                <div class="checkbox">
-                    <input type="checkbox" name="" id="" value="" />
-                    <label for="">Mujeres</label>
+                <div class="dato-entrada">
+                    <h3>Buscar por equipo:</h3>
+                    <select name="" id="">
+                        <option selected value="">Todos los equipos</option>
+                        <option value="">Los Angeles</option>
+                        <option value="">Detroit Tigers</option>
+                        <option value="">Houston Astros</option>
+                        <option value="">Philadelphia</option>
+                    </select>
                 </div>
 
-                <div class="checkbox">
-                    <input type="checkbox" name="" id="" value="" />
-                    <label for="">Niños</label>
+                <div class="busq-para">
+                    <h3>Para:</h3>
+                    <div class="container-checkbox">
+                        <div class="checkbox">
+                            <input type="checkbox" name="" id="" value="" />
+                            <label for="">Todos</label>
+                        </div>
+
+                        <div class="checkbox">
+                            <input type="checkbox" name="" id="" value="" />
+                            <label for="">Hombres</label>
+                        </div>
+
+                        <div class="checkbox">
+                            <input type="checkbox" name="" id="" value="" />
+                            <label for="">Mujeres</label>
+                        </div>
+
+                        <div class="checkbox">
+                            <input type="checkbox" name="" id="" value="" />
+                            <label for="">Niños</label>
+                        </div>
+
+                        <div class="checkbox">
+                            <input type="checkbox" name="" id="" value="" />
+                            <label for="">Bebés</label>
+                        </div>
+                    </div>
+
                 </div>
 
-                <div class="checkbox">
-                    <input type="checkbox" name="" id="" value="" />
-                    <label for="">Bebés</label>
+                <div class="container-boton">
+                    <input type="button" value="Buscar" />
+                    <input type="button" id="limpiar" value="Limpiar" />
                 </div>
-            </div>
-
-            <div class="container-boton">
-                <input type="button" value="Buscar" />
-                <input type="button" id="limpiar" value="Limpiar" />
             </div>
         </section>
 
@@ -229,6 +234,8 @@
                     </div>
                 </div>
 
+                <input type="checkbox" name="tgl-buscar" class="tgl-busqueda">
+                <label class="btn-filter" id="btn-filter" for="tgl-buscar"><i class="fa-solid fa-filter"></i></label>
                 <div class="mostrar">
                     <h3>Mostrar</h3>
                     <select name="" id="mostrar-pag">
@@ -246,7 +253,7 @@
                     <div class="info-producto">
                         <h3>Gorra ajustada para hombre The Seatles</h3>
                         <h4>Gorras</h4>
-                        <button class="btn-añadir">
+                        <button class="btn-añadir" id="data-1">
                             Añadir al carrito
                             <img src="./Icons/Carrito-agregar.svg" alt="" />
                         </button>
@@ -263,7 +270,7 @@
                             Gorra para hombres The Seatles Mariners new Era Royal Negro
                         </h3>
                         <h4>Gorras</h4>
-                        <button class="btn-añadir">
+                        <button class="btn-añadir" id="data-2">
                             Añadir al carrito
                             <img src="./Icons/Carrito-agregar.svg" alt="" />
                         </button>
@@ -278,7 +285,7 @@
                     <div class="info-producto">
                         <h3>Camiseta personalizada para hombres de Seattles Mariners</h3>
                         <h4>Camiseta</h4>
-                        <button class="btn-añadir">
+                        <button class="btn-añadir" id="data-3">
                             Añadir al carrito
                             <img src="./Icons/Carrito-agregar.svg" alt="" />
                         </button>
@@ -293,7 +300,7 @@
                     <div class="info-producto">
                         <h3>Camiseta personalizada para hombres de Detroit Tiggers</h3>
                         <h4>Camiseta</h4>
-                        <button class="btn-añadir">
+                        <button class="btn-añadir" id="data-4">
                             Añadir al carrito
                             <img src="./Icons/Carrito-agregar.svg" alt="" />
                         </button>
@@ -308,7 +315,7 @@
                     <div class="info-producto">
                         <h3>Camiseta fanático para mujeres con cuello V de Detroit Tigers</h3>
                         <h4>Camiseta</h4>
-                        <button class="btn-añadir">
+                        <button class="btn-añadir" id="data-5">
                             Añadir al carrito
                             <img src="./Icons/Carrito-agregar.svg" alt="" />
                         </button>
@@ -323,7 +330,7 @@
                     <div class="info-producto">
                         <h3>Correa de silicona Apple Watch con logo azul marino Detroit Tigers</h3>
                         <h4>Camiseta</h4>
-                        <button class="btn-añadir">
+                        <button class="btn-añadir" id="data-6">
                             Añadir al carrito
                             <img src="./Icons/Carrito-agregar.svg" alt="" />
                         </button>
@@ -338,7 +345,7 @@
                     <div class="info-producto">
                         <h3>Cartera de mujer de Detroit Tigers con triple cremallera</h3>
                         <h4>Camiseta</h4>
-                        <button class="btn-añadir">
+                        <button class="btn-añadir" id="data-7">
                             Añadir al carrito
                             <img src="./Icons/Carrito-agregar.svg" alt="" />
                         </button>
@@ -353,7 +360,7 @@
                     <div class="info-producto">
                         <h3>Chaqueta de forro polar reversible Diseño Real de los Angeles Dodgers para hombres</h3>
                         <h4>Camiseta</h4>
-                        <button class="btn-añadir">
+                        <button class="btn-añadir" id="data-8">
                             Añadir al carrito
                             <img src="./Icons/Carrito-agregar.svg" alt="" />
                         </button>
@@ -367,7 +374,7 @@
                     <div class="info-producto">
                         <h3>Caja de regalo para fanatico de Los Angeles</h3>
                         <h4>Camiseta</h4>
-                        <button class="btn-añadir">
+                        <button class="btn-añadir" id="data-9">
                             Añadir al carrito
                             <img src="./Icons/Carrito-agregar.svg" alt="" />
                         </button>
@@ -442,9 +449,11 @@
             <img src="./Icons/Copyright.svg" alt="" />
         </div>
 
-        <script src="javascript/precarga.js"></script>
-        <script src="javascript/index.js"></script>
+
     </footer>
+    <script src="javascript/precarga.js"></script>
+    <script src="javascript/index.js"></script>
+    <script src="javascript/tienda.js"></script>
 </body>
 
 </html>

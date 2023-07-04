@@ -60,6 +60,10 @@ nav .logo {
   width: 100px;
 }
 
+.toggle i {
+  font-size: 32px;
+}
+
 nav ul {
   list-style: none;
   display: flex;

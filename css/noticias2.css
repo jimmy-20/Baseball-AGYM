@@ -67,7 +67,7 @@ select{
     color: var(--gris);
 }
 
-select::after{
+/* select::after{
     content: "";
     background-image: url(../img/flecha-arriba.png);
     width: 20px;
@@ -76,7 +76,7 @@ select::after{
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
-}
+} */
 
 ::placeholder{
     color: var(--gris);
