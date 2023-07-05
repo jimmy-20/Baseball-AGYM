@@ -260,6 +260,7 @@ main{
     font-weight: bold;
     width: 116px;
     height: 50px;
+    cursor: pointer;
 }
 
 #paginacion-abajo{
