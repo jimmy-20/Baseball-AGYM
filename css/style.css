@@ -55,14 +55,16 @@ h4 {
 }
 
 p {
-  font-family: var(--azul);
+  font-family: var(--fuentePrincipal);
   font-size: 16px;
   line-height: 1.5;
+  text-align: justify;
 }
 
 a {
   text-decoration: none;
-  font-family: var(--azul);
+  font-family: var(--fuentePrincipal);
+  color: var(--negro);
 }
 
 ul {
@@ -70,7 +72,7 @@ ul {
 }
 
 li {
-  font-family: var(--azul);
+  font-family: var(--fuentePrincipal);
   font-size: 24px;
   line-height: 1.2;
   padding: 12px;

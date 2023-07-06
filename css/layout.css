@@ -1,5 +1,13 @@
 @import url(style.css);
 
+
+#checkbox{
+    display: none;
+}
+
+#checkbox:checked ~ .container-contenido nav{
+    display: block;
+}
 .cabecera{
     background-color: var(--azul);
     height: 60px;
@@ -21,50 +29,58 @@
     color: var(--blanco);
 }
 
-
-
 body{
     height: 100vh;
 }
 
+#icono-hamburguesa{
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
 nav{
-    width: 200px;
+    width: 100%;
     background: linear-gradient(var(--azul),var(--negro));
     display: none;
+    transition: 200ms width;
 }
 
 .container-contenido{
     display: grid;  
     grid-template-columns: 1FR;
-
 }
 
-@media (MAX-width:768px){ 
+.menu-item{
+    display: flex;
+    gap: 15px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 20px;
+}
+
+.menu-item:hover{
+    cursor: pointer;
+    background-color: var(--gris);
+}
+
+.menu-item h4{
+    color: var(--blanco);
+    font-weight: normal;
+}
+
+
+@media (min-width:1000px){ 
     .container-contenido{
         grid-template-columns: 200px 1fr;
-        height: calc(100vh - 60px);
+        height: 100vh;
     }
 
     nav{
         display: block;
     }
     
-}
-
-
-
-
-
-.menu-item{
-    display: flex;
-    gap: 15px;
-    margin-left: 20px;
-    margin-top: 30px;
-}
-
-.menu-item h4{
-    color: var(--blanco);
-    font-weight: normal;
 }
 
 main{
