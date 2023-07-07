@@ -54,6 +54,18 @@
                     <p class="bold">Iniciar Sesión</p>
                     <img src="./Images/User.png" width="48px" height="48px" alt="login" />
                 </a>
+                <div class="mi-cuenta" id="mi-cuenta">
+                    <div class="menu-item">
+                      <input type="checkbox" id="toggle-menu" class="toggle-menu">
+                      <label for="toggle-menu" class="menu-title bold"><img src="./Images/User.png" width="48px" height="48px" alt="login" /> <p>Mi Cuenta</p>
+                      </label>
+                      <div class="submenu">
+                        <a href="cuenta.html">Gestionar Cuenta</a>
+                        <a href="pedidos.html">Mis pedidos</a>
+                        <a href="#" onclick="localStorage.clear();window.location.reload;">Salir</a>
+                      </div>
+                    </div>
+                  </div>
             </div>
 
         </nav>
@@ -77,8 +89,8 @@
                         <input class="passwordLogin" type="password" placeholder="******" required>
                         <label>Contraseña</label>
                     </div>
-
-                    <button type="submit" class="btn">Entrar</button>
+                    
+                    <button type="submit" id="btn-login" class="btn">Entrar</button>
 
                     <div class="inicio-google">
                         <p>O</p>
@@ -305,6 +317,7 @@
 
     <script src="javascript/precarga.js"></script>
     <script src="javascript/index.js"></script>
+    <script src="javascript/acceso.js"></script>
 </body>
 
 </html>
