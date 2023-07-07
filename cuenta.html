@@ -172,16 +172,20 @@
             </section>
             <section class="photo-section">
                 <h4 class="title">Foto de perfil</h4>
-                <span class="icon-container">
-                    <i class="fa-regular fa-user" style="color: #000000;"></i>
+
+                <span style="margin: 50px auto;" class="icon-container">
+                    <i id="icon-photo" class="fa-regular fa-user" style="color: #000000;"></i>
+                    <img id="photo" src="" alt="Tu foto" style="display: none;border-radius: 50%;" width="100px" height="100px">
                 </span>
-                <span class="drag-box">
+
+                <input type="file" id="file-input" accept="image/*">
+
+                <span class="drag-box" id="drop-area">
                     <p>Arrastra aquí</p>
                 </span>
                 <span class="buttons-container">
-                    <button class="button">Ver Foto</button>
-                    <button class="button">Tomar Foto</button>
-                    <button class="button">Eliminar Foto</button>
+                    <button class="button" id="tomar-foto">Tomar Foto</button>
+                    <button class="button" id="btn-eliminar" onclick="EliminarFoto()">Eliminar Foto</button>
                 </span>
             </section>
             <section class="personal-data-section">
@@ -237,7 +241,7 @@
                     </div>
                     <div>
                         <label for="numero">Número</label>
-                        <input type="number" id="numero" required>
+                        <input type="number" id="numero" required onchange="if (this.value<=1) this.value=1;">
                     </div>
                   
                     <span class="button-container">
@@ -332,5 +336,6 @@
     <script src="javascript/precarga.js"></script>
     <script src="javascript/index.js"></script>
     <script src="javascript/acceso.js"></script>
+    <script src="javascript/cuenta.js"></script>
 </body>
 </html>

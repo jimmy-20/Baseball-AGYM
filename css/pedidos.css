@@ -80,3 +80,35 @@
         height: 70vh;
     }
   }
+
+  table{
+    font-family: var(--fuentePrincipal);
+    background-color: var(--blanco);
+    overflow-x: auto;
+    overflow-y: scroll;
+    padding: 15px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 10px 10px;
+    width: 95%;
+    
+}
+
+tbody{
+    max-height: 200px; /* Ajusta la altura máxima según tus necesidades */
+    overflow-y: scroll;
+}
+
+th{
+    background-color: var(--azul);
+    color: var(--blanco);
+    padding: 12px;
+}
+
+td{
+    padding: 10px;
+}
+
+tbody tr:nth-child(even){
+    background-color: var(--gris-claro);
+}
