@@ -170,14 +170,15 @@
                 </div>
                 <div class="dato">
                     <h4>Cantidad:</h4>
-                    <select name="" id="cmb-cantidad">
+                    <select name="" id="cmb-cantidad" onchange="OcultarSelect()">
                         <option value="">1</option>
                         <option value="">2</option>
                         <option value="">3</option>
                         <option value="">4</option>
                         <option value="">5</option>
-                        <option value="">Otra cantidad</option>
+                        <option value="Otra">Otra cantidad</option>
                     </select>
+                    <input type="number" id="otra-cantidad" value="5">
                 </div>
                 <p class="producto-descripcion">Estarás listo para divertirte bajo el sol como un ávido fanático de Los
                     Angeles Angels cuando descubras todos los tesoros en este Fanatics Pack. Es un oasis de artículos
@@ -314,7 +315,7 @@
     <script src="javascript/precarga.js"></script>
     <script src="javascript/index.js"></script>
     <script src="javascript/acceso.js"></script>
-
+    <script src="javascript/producto.js"></script>
 </body>
 
 </html>

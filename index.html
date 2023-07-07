@@ -50,9 +50,22 @@
         <a href="carrito.html" class="carrito"><img src="./Icons/Carrito.svg" width="48px" height="48px"
             class="icon" /></a>
         <a href="#" class="login" id="login">
-          <p class="bold">Iniciar Sesión</p>
+          <p id="titulo-cuenta" class="bold">Iniciar Sesión</p>
           <img src="./Images/User.png" width="48px" height="48px" alt="login" />
         </a>
+
+        <div class="mi-cuenta" id="mi-cuenta">
+          <div class="menu-item">
+            <input type="checkbox" id="toggle-menu" class="toggle-menu">
+            <label for="toggle-menu" class="menu-title bold"><img src="./Images/User.png" width="48px" height="48px" alt="login" /> <p>Mi Cuenta</p>
+            </label>
+            <div class="submenu">
+              <a href="">Gestionar Cuenta</a>
+              <a href="">Mis pedidos</a>
+              <a href="#" onclick="localStorage.clear();window.location.reload;">Salir</a>
+            </div>
+          </div>
+        </div>
       </div>
 
     </nav>
