@@ -34,9 +34,14 @@ body{
     height: 100vh;
 }
 
+.icono-hamburguesa{
+    cursor: pointer;
+    display: flex;
+    margin-right: 50px;
+}
+
 #icono-hamburguesa{
-    position: relative;
-    transition: transform 0.3s ease-in-out;
+    color: var(--blanco);
 }
 
 nav{
@@ -58,6 +63,7 @@ nav{
     align-items: center;
     padding: 10px;
     margin: 20px;
+    text-align: justify;
 }
 
 .menu-item:hover{
